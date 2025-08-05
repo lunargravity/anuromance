@@ -54,6 +54,7 @@ export default function Page() {
         <span></span>
         <div className="mockup-window">
           <div className="home">
+            <div className="bar">home</div>
             <h1>Hello!</h1>
           </div>
         </div>
