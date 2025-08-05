@@ -22,8 +22,13 @@ function createStar(size: number, width: number, height: number) {
   };
 }
 
+type Star = {
+  className: string;
+  style: React.CSSProperties;
+};
+
 export default function Page() {
-  const [stars, setStars] = React.useState<any[]>([]);
+  const [stars, setStars] = React.useState<Star[]>([]);
   const skyRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
