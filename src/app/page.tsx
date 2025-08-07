@@ -60,22 +60,22 @@ export default function Page() {
         <div className="mockup-window">
           <div className="home">
             <div className="bar">home</div>
-            <div>
+            <div className="first-row">
               <img
                 src="/profile.jpg"
                 alt="Profile of Anu"
                 className="profile"
               />
-              <div className="relative mt-10 border border-gray-400 rounded-lg px-4 pt-6 pb-4">
-                <p className="absolute -top-3 left-4 bg-white px-2 text-sm text-gray-600">
+              <div className="custom-container">
+                <p className="logline-label">
                   Logline
                 </p>
                 <div>
-                  <p>This is some static content inside the container.</p>
+                  <p>Ghostwriter with a BFA in Creative Writing, delivering romance stories that balance fresh emotions with classic tropes, turning every project into a new romance worth falling for.</p>
+                  <button className='contact'>Let's Connect</button>
                 </div>
               </div>
             </div>
-            <h1>Hello!</h1>
           </div>
         </div>
       </section>
