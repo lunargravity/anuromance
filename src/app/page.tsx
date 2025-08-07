@@ -74,6 +74,15 @@ function dragElement(elmnt: HTMLElement) {
   }
 }
 
+function toggleDisplay(buttonId: string) {
+  var x = document.getElementById(buttonId)!;
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 export default function Page() {
   const [stars, setStars] = React.useState<Star[]>([]);
   const skyRef = useRef<HTMLDivElement>(null);
@@ -87,10 +96,10 @@ export default function Page() {
     }
     setStars(starArr);
 
-    const container = document.getElementById("draggable-container")!;
-    if (container) {
-      dragElement(container);
-    }
+    const container = document.querySelector(".draggable-container");
+if (container instanceof HTMLElement) {
+  dragElement(container);
+}
   }, []);
 
   return (
@@ -129,14 +138,17 @@ export default function Page() {
                     tropes, turning every project into a new romance worth
                     falling for.
                   </p>
-                  <button className="contact">let&apos;s connect</button>
+                  <button className="contact" onClick={() => toggleDisplay("contact-window")}>let&apos;s connect</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="draggable-container" className="draggable-container">
-          <div id="draggable-header" className="draggable-header">Contact</div>
+        <div id="contact-window" className="draggable-container">
+          <div id="draggable-header">
+            <p>contact</p>
+            <button className="close-btn" onClick={() => toggleDisplay("contact-window")}>&times;</button>
+            </div>
           <div className="contact-info">
             <p>Email: altankhanu@gmail.com</p>
           </div>

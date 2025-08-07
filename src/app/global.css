@@ -15,6 +15,8 @@
   --star-color-B: transparent;
   --primary-font-family: 'Gill Sans', sans-serif;
   --secondary-font-family: 'Courier New', Courier, monospace;
+  --primary-font-size: 1rem;
+  --secondary-font-size: 0.875rem;
 }
 
 /* === GLOBAL SETTINGS === */
@@ -39,9 +41,7 @@ button {
   cursor: pointer;
   font-family: var(--primary-font-family);
   background-color: var(--color-secondarybackground);
-  padding-left: 0.5rem; 
-  padding-right: 0.5rem;
-  font-size: 0.875rem;
+  font-size: var(--secondary-font-size);
   color: var(--color-secondarytext);
   border-radius: 5px;     
   border: 1px solid var(--color-secondarybackground); 
@@ -108,26 +108,44 @@ section {
   top: 100px;
   left: 100px; 
   z-index: 110;
-  width: 80vw; 
-  max-width: 600px;
+  width: auto; 
   overflow: hidden;
   background-color: var(--color-primarybackground);
   border-radius: 10px;
   border: 2px solid var(--color-secondarybackground);
 }
 
-.draggable-header {
+#contact-window {
+  display: none;
+}
+
+#draggable-header {
+  display: flex;
   cursor: move;
   position: relative;
   width: 100%;
-  height: 2.1rem;
   border: 2px solid var(--color-secondarybackground);
   background-color: var(--color-secondarybackground);
   justify-content: space-between;
   padding-left: 10px;
+  padding-right: 5px;
   font-family: var(--primary-font-family);
-  font-size: 1.1rem;
+  font-size: var(--secondary-font-size);
   color: var(--color-windowbackground);
+}
+
+.close-btn {
+  height: 20px;
+  width: 20px;
+  border: none;
+}
+
+.close-btn:hover {
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: var(--color-tertiarybackground);
+  color: var(--color-primarytext);
 }
 
 /* === HOME BAR SETTINGS === */
@@ -188,7 +206,7 @@ section {
   background-color: var(--color-tertiarybackground);
   padding-left: 0.5rem; 
   padding-right: 0.5rem;
-  font-size: 0.875rem;
+  font-size: var(--secondary-font-size);
   color: var(--color-secondarytext);
   border-radius: 5px;     
   border: 1px solid var(--color-tertiarybackground); 
@@ -202,6 +220,8 @@ section {
 .contact {
   display: flex;
   justify-self: flex-end;
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem;
 }
 
 /* === CONTACT SETTINGS === */
