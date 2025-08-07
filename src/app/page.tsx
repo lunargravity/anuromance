@@ -1,6 +1,10 @@
 "use client";
 import React, { useRef, useEffect } from "react";
+import Image from "next/image";
 import styles from "./stars.module.css";
+
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/anuromance" : "";
 
 function random(range: number, unit: string) {
   const randNum = Math.floor(Math.random() * range) + 1;
@@ -61,10 +65,12 @@ export default function Page() {
           <div className="home">
             <div className="bar">home</div>
             <div className="first-row">
-              <img
-                src="/profile.jpg"
+              <Image
+                src={`${basePath}/profile.jpg`}
                 alt="Profile of Anu"
                 className="profile"
+                width={100}
+                height={100}
               />
               <div className="custom-container">
                 <p className="logline-label">
@@ -72,7 +78,7 @@ export default function Page() {
                 </p>
                 <div>
                   <p>Ghostwriter with a BFA in Creative Writing, delivering romance stories that balance fresh emotions with classic tropes, turning every project into a new romance worth falling for.</p>
-                  <button className='contact'>Let's Connect</button>
+                  <button className="contact">Let&apos;s Connect</button>
                 </div>
               </div>
             </div>
