@@ -60,6 +60,11 @@ export default function Page() {
         <div className="mockup-window">
           <div className="home">
             <div className="bar">home</div>
+            <img
+              src="/profile.jpg"
+              alt="Profile of Anu"
+              className="profile"
+            />
             <h1>Hello!</h1>
           </div>
         </div>

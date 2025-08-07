@@ -9,6 +9,8 @@
   --color-primarytext: #ffffff;
   --star-color-A: white;
   --star-color-B: transparent;
+  --primary-font-family: 'Gill Sans', sans-serif;
+  --secondary-font-family: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -171,14 +173,13 @@ span:nth-child(10) {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;;
   flex-direction: column;
 }
 
 .home h1 {
   font-size: 1.5rem;
-  font-family: "Gill Sans", sans-serif;
+  font-family: var(--primary-font-family);
   color: var(--color-windowbackground);
   color: var(--color-primarytext);
   text-align: center;
@@ -192,9 +193,17 @@ span:nth-child(10) {
   border: 2px solid var(--color-secondarybackground);
   background-color: var(--color-secondarybackground);
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1rem;
-  color: var(--color-primarytext);
+  padding-left: 10px;
+  font-family: var(--primary-font-family);
+  font-size: 1.1rem;
+  color: var(--color-windowbackground);
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 10px 10px 10px;
+  border: 2px solid var(--color-secondarybackground);
+  position: relative;
 }

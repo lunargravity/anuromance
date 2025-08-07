@@ -1,4 +1,5 @@
 {
+  "homepage": "https://anuromance.github.io/anuromance",
   "name": "anuromance.portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out"
+    "export": "next export",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "next": "15.4.5",
