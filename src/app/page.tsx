@@ -53,18 +53,28 @@ export default function Page() {
             <div key={idx} className={star.className} style={star.style}></div>
           ))}
         </div>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className={styles.shootingStar}></span>
+        <span className={styles.shootingStar}></span>
+        <span className={styles.shootingStar}></span>
+        <span className={styles.shootingStar}></span>
         <div className="mockup-window">
           <div className="home">
             <div className="bar">home</div>
-            <img
-              src="/profile.jpg"
-              alt="Profile of Anu"
-              className="profile"
-            />
+            <div>
+              <img
+                src="/profile.jpg"
+                alt="Profile of Anu"
+                className="profile"
+              />
+              <div className="relative mt-10 border border-gray-400 rounded-lg px-4 pt-6 pb-4">
+                <p className="absolute -top-3 left-4 bg-white px-2 text-sm text-gray-600">
+                  Logline
+                </p>
+                <div>
+                  <p>This is some static content inside the container.</p>
+                </div>
+              </div>
+            </div>
             <h1>Hello!</h1>
           </div>
         </div>
