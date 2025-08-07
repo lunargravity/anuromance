@@ -32,17 +32,20 @@ type Star = {
 };
 
 function dragElement(elmnt: HTMLElement) {
-  var pos1 = 0,
+  let pos1 = 0,
     pos2 = 0,
     pos3 = 0,
     pos4 = 0;
-  if (document.getElementById("draggable-header")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById("draggable-header").onmousedown = dragMouseDown;
+
+  const header = document.getElementById("draggable-header");
+  // if present, the header is where you move the DIV from:
+  if (header) {
+    header.onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
   }
+  
   function dragMouseDown(e: MouseEvent) {
     e = e || window.event;
     e.preventDefault();
@@ -75,7 +78,7 @@ function dragElement(elmnt: HTMLElement) {
 }
 
 function toggleDisplay(buttonId: string) {
-  var x = document.getElementById(buttonId)!;
+  const x = document.getElementById(buttonId)!;
   if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "block";
   } else {
