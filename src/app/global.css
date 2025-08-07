@@ -7,8 +7,10 @@
   --color-lightsky: #2a6f97;
   --color-primarybackground: #013a63;
   --color-secondarybackground: #a9d6e5;
+  --color-tertiarybackground: #468FAF;
   --color-windowbackground: #012a4a;
   --color-primarytext: #ffffff;
+  --color-secondarytext: #012a4a;
   --star-color-A: white;
   --star-color-B: transparent;
   --primary-font-family: 'Gill Sans', sans-serif;
@@ -31,6 +33,23 @@ body {
   overflow: hidden;
   color: var(--color-primarytext);
   font-family: var(--primary-font-family);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--primary-font-family);
+   background-color: var(--color-secondarybackground);
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-secondarytext);
+  border-radius: 5px;     
+  border: 1px solid var(--color-secondarybackground); 
+}
+
+button:hover {
+  background-color: var(--color-tertiarybackground);
+  color: var(--color-primarytext);
 }
 
 /* === BACKGROUND SETTINGS === */
@@ -113,7 +132,7 @@ section {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid var(--color-secondarybackground);
+  border: 2px solid var(--color-tertiarybackground);
   position: relative;
   display: inline-block;
 }
@@ -126,7 +145,7 @@ section {
   width: auto;                 
   box-sizing: border-box;      
   position: relative;
-  border: 1px solid var(--color-secondarybackground); 
+  border: 1px solid var(--color-tertiarybackground); 
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
@@ -138,11 +157,21 @@ section {
   position: absolute;
   top: -0.75rem;     
   left: 1rem;           
-  background-color: var(--color-secondarybackground);
+  background-color: var(--color-tertiarybackground);
   padding-left: 0.5rem; 
   padding-right: 0.5rem;
   font-size: 0.875rem;
-  color: #4b5563;
+  color: var(--color-secondarytext);
   border-radius: 5px;     
-  border: 1px solid var(--color-secondarybackground); 
+  border: 1px solid var(--color-tertiarybackground); 
+  margin-bottom: 10px;
+}
+
+.logline {
+  margin: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-self: flex-end;
 }

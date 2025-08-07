@@ -74,10 +74,10 @@ export default function Page() {
               />
               <div className="custom-container">
                 <p className="logline-label">
-                  Logline
+                  LOGLINE
                 </p>
                 <div>
-                  <p>Ghostwriter with a BFA in Creative Writing, delivering romance stories that balance fresh emotions with classic tropes, turning every project into a new romance worth falling for.</p>
+                  <p className="logline">Ghostwriter with a BFA in Creative Writing, delivering romance stories that balance fresh emotions with classic tropes, turning every project into a new romance worth falling for.</p>
                   <button className="contact">Let&apos;s Connect</button>
                 </div>
               </div>
