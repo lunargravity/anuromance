@@ -227,20 +227,15 @@ section {
   width: 200px !important;
 }
 
-.contact-info {
-  margin: 10px;
-  font-size: var(--secondary-font-size);
-}
-
 .social-medias {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .source {
   font-size: 0.75rem;
-  color: #2A6F97;
+  color: var(--color-primarytext);
   font-style: italic;
 }

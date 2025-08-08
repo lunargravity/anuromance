@@ -162,9 +162,20 @@ export default function Page() {
               &times;
             </button>
           </div>
-          <div className="contact-info">
-            <p>email: altankhanu@gmail.com</p>
             <div className="social-medias">
+              <a
+                href="mailto:altankhanu@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={`${basePath}/gmail.png`}
+                  alt="Gmail"
+                  className="gmail"
+                  width={35}
+                  height={35}
+                />
+              </a>
               <a
                 href="https://www.linkedin.com/in/anu-altankhuyag/"
                 target="_blank"
@@ -205,8 +216,10 @@ export default function Page() {
                 />
               </a>
             </div>
-            <p className="source">
-              <ul>
+            
+          </div>
+      </section>
+      <ul className="source">
                 <li>
                   <a
                     target="_blank"
@@ -244,10 +257,6 @@ export default function Page() {
                   </a>
                 </li>
               </ul>
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
