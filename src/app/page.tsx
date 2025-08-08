@@ -45,7 +45,7 @@ function dragElement(elmnt: HTMLElement) {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
   }
-  
+
   function dragMouseDown(e: MouseEvent) {
     e = e || window.event;
     e.preventDefault();
@@ -100,9 +100,9 @@ export default function Page() {
     setStars(starArr);
 
     const container = document.querySelector(".draggable-container");
-if (container instanceof HTMLElement) {
-  dragElement(container);
-}
+    if (container instanceof HTMLElement) {
+      dragElement(container);
+    }
   }, []);
 
   return (
@@ -141,7 +141,12 @@ if (container instanceof HTMLElement) {
                     tropes, turning every project into a new romance worth
                     falling for.
                   </p>
-                  <button className="contact" onClick={() => toggleDisplay("contact-window")}>let&apos;s connect</button>
+                  <button
+                    className="contact"
+                    onClick={() => toggleDisplay("contact-window")}
+                  >
+                    let&apos;s connect
+                  </button>
                 </div>
               </div>
             </div>
@@ -150,10 +155,96 @@ if (container instanceof HTMLElement) {
         <div id="contact-window" className="draggable-container">
           <div id="draggable-header">
             <p>contact</p>
-            <button className="close-btn" onClick={() => toggleDisplay("contact-window")}>&times;</button>
-            </div>
+            <button
+              className="close-btn"
+              onClick={() => toggleDisplay("contact-window")}
+            >
+              &times;
+            </button>
+          </div>
           <div className="contact-info">
-            <p>Email: altankhanu@gmail.com</p>
+            <p>email: altankhanu@gmail.com</p>
+            <div className="social-medias">
+              <a
+                href="https://www.linkedin.com/in/anu-altankhuyag/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={`${basePath}/linkedin.png`}
+                  alt="LinkedIn"
+                  className="linkedin"
+                  width={35}
+                  height={35}
+                />
+              </a>
+              <a
+                href="https://www.upwork.com/freelancers/~01aa165982992f2332?mp_source=share"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={`${basePath}/upwork.png`}
+                  alt="Upwork"
+                  className="upwork"
+                  width={35}
+                  height={35}
+                />
+              </a>
+              <a
+                href="https://www.tiktok.com/@alunarbunnie?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={`${basePath}/tiktok.png`}
+                  alt="TikTok"
+                  className="tiktok"
+                  width={35}
+                  height={35}
+                />
+              </a>
+            </div>
+            <p className="source">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://icons8.com/icon/8808/linkedin"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  icon by{" "}
+                  <a target="_blank" href="https://icons8.com">
+                    Icons8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://icons8.com/icon/2y_wcSzVjqiQ/upwork"
+                  >
+                    Upwork
+                  </a>{" "}
+                  icon by{" "}
+                  <a target="_blank" href="https://icons8.com">
+                    Icons8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://icons8.com/icon/118638/tiktok"
+                  >
+                    TikTok
+                  </a>{" "}
+                  icon by{" "}
+                  <a target="_blank" href="https://icons8.com">
+                    Icons8
+                  </a>
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </section>
