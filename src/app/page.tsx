@@ -150,6 +150,16 @@ export default function Page() {
                 </div>
               </div>
             </div>
+            <div className="second-row">
+              <div className="custom-container">
+                <p className="logline-label">samples</p>
+                <div>
+                  <div className="samples">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="contact-window" className="draggable-container">
@@ -162,101 +172,91 @@ export default function Page() {
               &times;
             </button>
           </div>
-            <div className="social-medias">
-              <a
-                href="mailto:altankhanu@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={`${basePath}/gmail.png`}
-                  alt="Gmail"
-                  className="gmail"
-                  width={35}
-                  height={35}
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/anu-altankhuyag/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={`${basePath}/linkedin.png`}
-                  alt="LinkedIn"
-                  className="linkedin"
-                  width={35}
-                  height={35}
-                />
-              </a>
-              <a
-                href="https://www.upwork.com/freelancers/~01aa165982992f2332?mp_source=share"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={`${basePath}/upwork.png`}
-                  alt="Upwork"
-                  className="upwork"
-                  width={35}
-                  height={35}
-                />
-              </a>
-              <a
-                href="https://www.tiktok.com/@alunarbunnie?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={`${basePath}/tiktok.png`}
-                  alt="TikTok"
-                  className="tiktok"
-                  width={35}
-                  height={35}
-                />
-              </a>
-            </div>
-            
+          <div className="social-medias">
+            <a
+              href="mailto:altankhanu@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={`${basePath}/gmail.png`}
+                alt="Gmail"
+                className="gmail"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anu-altankhuyag/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={`${basePath}/linkedin.png`}
+                alt="LinkedIn"
+                className="linkedin"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01aa165982992f2332?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={`${basePath}/upwork.png`}
+                alt="Upwork"
+                className="upwork"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@alunarbunnie?is_from_webapp=1&sender_device=pc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={`${basePath}/tiktok.png`}
+                alt="TikTok"
+                className="tiktok"
+                width={35}
+                height={35}
+              />
+            </a>
           </div>
+        </div>
       </section>
       <ul className="source">
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://icons8.com/icon/8808/linkedin"
-                  >
-                    LinkedIn
-                  </a>{" "}
-                  icon by{" "}
-                  <a target="_blank" href="https://icons8.com">
-                    Icons8
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://icons8.com/icon/2y_wcSzVjqiQ/upwork"
-                  >
-                    Upwork
-                  </a>{" "}
-                  icon by{" "}
-                  <a target="_blank" href="https://icons8.com">
-                    Icons8
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://icons8.com/icon/118638/tiktok"
-                  >
-                    TikTok
-                  </a>{" "}
-                  icon by{" "}
-                  <a target="_blank" href="https://icons8.com">
-                    Icons8
-                  </a>
-                </li>
-              </ul>
+        <li>
+          <a target="_blank" href="https://icons8.com/icon/8808/linkedin">
+            LinkedIn
+          </a>{" "}
+          icon by{" "}
+          <a target="_blank" href="https://icons8.com">
+            Icons8
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://icons8.com/icon/2y_wcSzVjqiQ/upwork">
+            Upwork
+          </a>{" "}
+          icon by{" "}
+          <a target="_blank" href="https://icons8.com">
+            Icons8
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://icons8.com/icon/118638/tiktok">
+            TikTok
+          </a>{" "}
+          icon by{" "}
+          <a target="_blank" href="https://icons8.com">
+            Icons8
+          </a>
+        </li>
+      </ul>
     </>
   );
 }
