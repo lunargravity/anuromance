@@ -238,4 +238,16 @@ section {
   font-size: 0.75rem;
   color: var(--color-primarytext);
   font-style: italic;
+  margin: 20px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* === SAMPLES SETTINGS === */
+
+.samples {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }

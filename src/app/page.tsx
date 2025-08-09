@@ -160,6 +160,9 @@ export default function Page() {
                 </div>
               </div>
             </div>
+            <div className="source">
+              <p>Icons by <a href="https://icons8.com/" target="_blank" rel="noopener referrer">icons8.com</a></p>
+            </div>
           </div>
         </div>
         <div id="contact-window" className="draggable-container">
@@ -228,35 +231,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <ul className="source">
-        <li>
-          <a target="_blank" href="https://icons8.com/icon/8808/linkedin">
-            LinkedIn
-          </a>{" "}
-          icon by{" "}
-          <a target="_blank" href="https://icons8.com">
-            Icons8
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://icons8.com/icon/2y_wcSzVjqiQ/upwork">
-            Upwork
-          </a>{" "}
-          icon by{" "}
-          <a target="_blank" href="https://icons8.com">
-            Icons8
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://icons8.com/icon/118638/tiktok">
-            TikTok
-          </a>{" "}
-          icon by{" "}
-          <a target="_blank" href="https://icons8.com">
-            Icons8
-          </a>
-        </li>
-      </ul>
     </>
   );
 }
