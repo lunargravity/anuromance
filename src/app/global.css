@@ -3,16 +3,19 @@
 /* === VARIABLES === */
 
 :root {
+  /* Sky & Stars Variables */
   --color-darksky: #012a4a;
   --color-lightsky: #2a6f97;
+  --star-color-A: white;
+  --star-color-B: transparent;
+  /* Background Variables */
   --color-primarybackground: #013a63;
   --color-secondarybackground: #a9d6e5;
   --color-tertiarybackground: #468FAF;
   --color-windowbackground: #012a4a;
+  /* Text Variables */
   --color-primarytext: #ffffff;
   --color-secondarytext: #012a4a;
-  --star-color-A: white;
-  --star-color-B: transparent;
   --primary-font-family: 'Gill Sans', sans-serif;
   --secondary-font-family: 'Courier New', Courier, monospace;
   --primary-font-size: 1rem;
@@ -22,9 +25,9 @@
 /* === GLOBAL SETTINGS === */
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -32,19 +35,19 @@ html {
 }
 
 body {
-  overflow: hidden;
   color: var(--color-primarytext);
   font-family: var(--primary-font-family);
+  overflow: hidden;
 }
 
 button {
-  cursor: pointer;
-  font-family: var(--primary-font-family);
   background-color: var(--color-secondarybackground);
-  font-size: var(--secondary-font-size);
-  color: var(--color-secondarytext);
   border-radius: 5px;     
   border: 1px solid var(--color-secondarybackground); 
+  color: var(--color-secondarytext);
+  cursor: pointer;
+  font-family: var(--primary-font-family);
+  font-size: var(--secondary-font-size);
 }
 
 button:hover {
@@ -55,11 +58,6 @@ button:hover {
 /* === BACKGROUND SETTINGS === */
 
 section {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
   background-image: linear-gradient(
     var(--color-darksky),
     var(--color-lightsky)
@@ -67,65 +65,71 @@ section {
   background-position-x: center;
   background-size: cover;
   display: block;
+  height: 100vh;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
 }
 
 /* === BASE WINDOW SETTINGS === */
 
 .mockup-window {
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  width: 80vw; 
-  max-width: 600px;
-  overflow: hidden;
   background-color: var(--color-primarybackground);
   border-radius: 10px;
   border: 2px solid var(--color-secondarybackground);
-}
-
-.home {
-  position: relative;
-  width: 100%;
-  height: auto;
   display: flex;
-  align-items: flex-start;;
   flex-direction: column;
+  left: 50%; 
+  max-width: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw; 
+  z-index: 100;
 }
 
 .first-row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.second-row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 10px;
 }
 
 .draggable-container {
-  position: absolute;
-  z-index: 100;
-  z-index: 110;
-  width: auto; 
-  overflow: hidden;
   background-color: var(--color-primarybackground);
   border-radius: 10px;
   border: 2px solid var(--color-secondarybackground);
+  overflow: hidden;
+  position: absolute;
+  width: auto; 
+  z-index: 100;
+  z-index: 110;
 }
 
 #draggable-header {
-  display: flex;
-  cursor: move;
-  position: relative;
-  width: 100%;
-  border: 2px solid var(--color-secondarybackground);
   background-color: var(--color-secondarybackground);
+  border: 2px solid var(--color-secondarybackground);
+  color: var(--color-windowbackground);
+  cursor: move;
+  display: flex;
+  font-family: var(--primary-font-family);
+  font-size: var(--secondary-font-size);
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 5px;
-  font-family: var(--primary-font-family);
-  font-size: var(--secondary-font-size);
-  color: var(--color-windowbackground);
+  position: relative;
+  width: 100%;
 }
 
 .close-btn {
@@ -144,7 +148,7 @@ section {
 
 /* === HOME BAR SETTINGS === */
 
-.home h1 {
+h1 {
   font-size: 1.5rem;
   font-family: var(--primary-font-family);
   color: var(--color-windowbackground);
@@ -156,8 +160,10 @@ section {
 .bar {
   position: relative;
   width: 100%;
-  height: 2.1rem;
+  height: 2rem;
   border: 2px solid var(--color-secondarybackground);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: var(--color-secondarybackground);
   justify-content: space-between;
   padding-left: 10px;
@@ -182,7 +188,7 @@ section {
 .custom-container {
   display: flex;
   flex-direction: column;     
-  width: auto;                 
+  flex: 1;               
   box-sizing: border-box;      
   position: relative;
   border: 1px solid var(--color-tertiarybackground); 
@@ -250,4 +256,5 @@ section {
   justify-content: space-between;
   align-items: center;
   margin: 20px;
+  flex: 1;
 }
