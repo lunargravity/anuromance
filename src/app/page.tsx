@@ -14,6 +14,8 @@ export default function Page() {
   const skyRef = useRef<HTMLDivElement>(null);
 
   const [showFirstSample, setShowFirstSample] = React.useState(false);
+  const [showSecondSample, setShowSecondSample] = React.useState(false);
+  const [showThirdSample, setShowThirdSample] = React.useState(false);
 
   useEffect(() => {
     const width = window.innerWidth;
@@ -60,6 +62,22 @@ export default function Page() {
                   }}
                   src={`${BASE_PATH}/thirdtimesthecharm.png`}
                   alt="Weight Icon"
+                  className="sample-icon"
+                />
+                <SampleIcon
+                  onClick={() => {
+                    setShowSecondSample(true);
+                  }}
+                  src={`${BASE_PATH}/boilingpot.png`}
+                  alt="Chef Hat Icon"
+                  className="sample-icon"
+                />
+                <SampleIcon
+                  onClick={() => {
+                    setShowThirdSample(true);
+                  }}
+                  src={`${BASE_PATH}/troublewithlynn.png`}
+                  alt="Wounded Person Icon"
                   className="sample-icon"
                 />
               </div>
