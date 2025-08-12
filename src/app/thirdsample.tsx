@@ -16,11 +16,11 @@ export default function ThirdSample({ onClick }: SampleProps) {
       </div>
       <p className="word-count">~1,200 words</p>
       <Tags tags={["Fantasy Romance", "Enemies to Lovers", "Grumpy Sunshine"]} />
-      <SpiceLevel level={2} />
+      <SpiceLevel level={3} />
       <div className="sample-content">
-        <p>These first three chapters are written in first person, present tense.</p>
+        <p>This scene excerpt is written in first person, past tense.</p>
         <br />
-        <p>Morgan has a plan: knock on the door, borrow flour, and finally get her hot neighbor’s number. But when Miguel, the absurdly gorgeous gym god next door, opens up in all his sweaty, smirking glory, the plan quickly unravels into awkward jokes and flirtation that sizzles more than anything Morgan could pull out of an oven.</p>
+        <p>Among the cheering crowd after her championship win, the only person Lynn seeks congratulations from is her new girlfriend, Edith. However, Edith is tired and stressed from continuous healing sessions between matches. After an emotional outburst, Lynn asks for a reward that only Edith can provide.</p>
       </div>
       <button className="coming-soon">Coming Soon</button>
     </div>
