@@ -270,6 +270,10 @@ h1 {
   cursor: pointer;
 }
 
+.sample-icon:hover {
+  transform: scale(1.5);
+}
+
 #first-sample {
   top: 30%;
   left: 25%;
