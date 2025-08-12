@@ -3,7 +3,8 @@ import React, { useRef, useEffect } from "react";
 import styles from "./stars.module.css";
 import SocialMedias from "./socialmedias";
 import FirstRow from "./profile";
-import Sample from "@/components/Sample";
+import SampleIcon from "@/components/SampleIcon";
+import FirstSample from "@/app/firstsample";
 import { dragElement, toggleDisplay } from "@/utils/domHelpers";
 import { BASE_PATH } from "@/config/constants";
 import { createStar, Star } from "@/utils/stars";
@@ -48,13 +49,15 @@ export default function Page() {
         <span className={styles.shootingStar}></span>
         <div className="mockup-window">
           <div className="bar">Anu Altankhuyag</div>
-          {FirstRow()}
+          {<FirstRow />}
           <div className="second-row">
             <div className="custom-container">
               <p className="logline-label">samples</p>
               <div className="samples">
-                <Sample
-                  onClick={() => {setShowFirstSample(true); console.log(showFirstSample);}}
+                <SampleIcon
+                  onClick={() => {
+                    setShowFirstSample(true);
+                  }}
                   src={`${BASE_PATH}/thirdtimesthecharm.png`}
                   alt="Weight Icon"
                   className="sample-icon"
@@ -75,12 +78,13 @@ export default function Page() {
             </p>
           </div>
         </div>
-        {showFirstSample && Sample({
-          onClick: () => setShowFirstSample(false),
-          src: `${BASE_PATH}/thirdtimesthecharm.png`,
-          alt: "Third Time's the Charm",
-          className: "sample-icon",
-          })}   
+        {showFirstSample && (
+          <FirstSample
+            onClick={() => {
+              setShowFirstSample(false);
+            }}
+          />
+        )}
         <div id="contact-window" className="draggable-container">
           <div className="draggable-header">
             <p>contact</p>
@@ -91,7 +95,7 @@ export default function Page() {
               &times;
             </button>
           </div>
-          {SocialMedias()}
+          {<SocialMedias />}
         </div>
       </section>
     </>

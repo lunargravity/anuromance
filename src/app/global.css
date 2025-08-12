@@ -265,7 +265,44 @@ h1 {
 #first-sample {
   top: 30%;
   left: 25%;
-  height: 100px;
+  height: auto;
   width: 300px;
   z-index: 120 !important;
+}
+
+.word-count {
+  font-size: var(--secondary-font-size);
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;;
+}
+
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px;
+}
+
+.tag {
+  background-color: var(--color-tertiarybackground);
+  border-radius: 5px;
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem;
+  font-size: var(--secondary-font-size);
+  color: var(--color-secondarytext);
+}
+
+.spice-level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.sample-content {
+  padding: 10px;
+  font-size: var(--secondary-font-size);
+  line-height: 1.5;
 }
