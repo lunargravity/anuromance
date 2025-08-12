@@ -22,6 +22,7 @@ export default function FirstSample({ onClick }: SampleProps) {
         <br />
         <p>Morgan has a plan: knock on the door, borrow flour, and finally get her hot neighbor’s number. But when Miguel, the absurdly gorgeous gym god next door, opens up in all his sweaty, smirking glory, the plan quickly unravels into awkward jokes and flirtation that sizzles more than anything Morgan could pull out of an oven.</p>
       </div>
+      <button>Read More</button>
     </div>
   );
 }
