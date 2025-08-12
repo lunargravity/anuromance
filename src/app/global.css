@@ -272,6 +272,22 @@ h1 {
   z-index: 120 !important;
 }
 
+#second-sample {
+  top: 25%;
+  left: 45%;
+  height: auto;
+  width: 300px;
+  z-index: 120 !important;
+}
+
+#third-sample {
+  top: 10%;
+  left: 30%;
+  height: auto;
+  width: 300px;
+  z-index: 120 !important;
+}
+
 .word-count {
   font-size: var(--secondary-font-size);
   margin-top: 20px;

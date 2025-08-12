@@ -4,7 +4,9 @@ import styles from "./stars.module.css";
 import SocialMedias from "./socialmedias";
 import FirstRow from "./profile";
 import SampleIcon from "@/components/SampleIcon";
-import FirstSample from "@/app/firstsample";
+import FirstSample from "./firstsample";
+import SecondSample from "./secondsample";
+import ThirdSample from "./thirdsample";
 import { dragElement, toggleDisplay } from "@/utils/domHelpers";
 import { BASE_PATH } from "@/config/constants";
 import { createStar, Star } from "@/utils/stars";
@@ -100,6 +102,20 @@ export default function Page() {
           <FirstSample
             onClick={() => {
               setShowFirstSample(false);
+            }}
+          />
+        )}
+        {showSecondSample && (
+          <SecondSample
+            onClick={() => {
+              setShowSecondSample(false);
+            }}
+          />
+        )}
+        {showThirdSample && (
+          <ThirdSample
+            onClick={() => {
+              setShowThirdSample(false);
             }}
           />
         )}
