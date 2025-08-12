@@ -113,11 +113,10 @@ section {
   overflow: hidden;
   position: absolute;
   width: auto; 
-  z-index: 100;
   z-index: 110;
 }
 
-#draggable-header {
+.draggable-header {
   background-color: var(--color-secondarybackground);
   border: 2px solid var(--color-secondarybackground);
   color: var(--color-windowbackground);
@@ -257,4 +256,16 @@ h1 {
   align-items: center;
   margin: 20px;
   flex: 1;
+}
+
+.sample-icon {
+  cursor: pointer;
+}
+
+#first-sample {
+  top: 30%;
+  left: 25%;
+  height: 100px;
+  width: 300px;
+  z-index: 120 !important;
 }
