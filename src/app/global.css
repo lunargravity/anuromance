@@ -99,10 +99,11 @@ section {
 }
 
 .second-row {
-  align-items: center;
+  align-items: stretch;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
+  height: 200px;
   padding: 10px;
 }
 
@@ -187,7 +188,8 @@ h1 {
 .custom-container {
   display: flex;
   flex-direction: column;     
-  flex: 1;               
+  flex: 1;       
+  height: 100%;        
   box-sizing: border-box;      
   position: relative;
   border: 1px solid var(--color-tertiarybackground); 
@@ -249,6 +251,10 @@ h1 {
 }
 
 /* === SAMPLES SETTINGS === */
+
+#samples-container {
+  flex: 0.2;
+}
 
 .samples {
   display: flex;
@@ -323,4 +329,27 @@ h1 {
   padding: 10px;
   font-size: var(--secondary-font-size);
   line-height: 1.5;
+}
+
+/* === GENRES SETTINGS === */
+
+.genre-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 10px;
+}
+
+#samples-container,
+#genres-container,
+#avoided-tropes {
+  height: auto; 
+}
+
+#genres-container {
+  flex: 0.5;
+}
+
+#avoided-tropes {
+  flex: 0.3;
 }
