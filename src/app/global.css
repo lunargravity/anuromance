@@ -335,6 +335,14 @@ h1 {
   line-height: 1.5;
 }
 
+.coming-soon {
+  margin: 15px 10px;
+  padding: 3px;
+  color: var(--color-primarytext);
+  border: 2px solid var(--color-secondarybackground);
+  background-color: transparent;
+}
+
 /* === GENRES SETTINGS === */
 
 .genre-list {
