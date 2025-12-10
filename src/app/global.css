@@ -237,6 +237,14 @@ section {
   width: 150px !important;
 }
 
+@media screen and (max-width: 600px) {
+  #contact-window {
+    top: 50%;
+    left: 50%;
+  }
+  
+}
+
 .social-medias {
   display: flex;
   justify-content: space-between;
