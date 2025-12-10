@@ -84,7 +84,7 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div id="genres-container" className="custom-container">
+            {/* <div id="genres-container" className="custom-container">
               <p className="logline-label">fave tropes</p>
               <div className="genre-list">
                 <ul>
@@ -107,7 +107,7 @@ export default function Page() {
                     <li>dark romance</li>
                   </ul>
                 </div>
-              </div>
+            </div> */}
           </div>
           <div className="source">
             <p>

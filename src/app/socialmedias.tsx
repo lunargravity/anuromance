@@ -26,13 +26,6 @@ export default function SocialMedias() {
         className="upwork"
         size={35}
       />
-      <Icon
-        href="https://www.tiktok.com/@alunarbunnie?is_from_webapp=1&sender_device=pc"
-        src={`${BASE_PATH}/tiktok.png`}
-        alt="TikTok"
-        className="tiktok"
-        size={35}
-      />
     </div>
   );
 }
