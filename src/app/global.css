@@ -181,6 +181,12 @@ section {
   display: inline-block;
 }
 
+@media screen and (max-width: 600px) {
+  p.logline br {
+    display: none;
+  }
+}
+
 /* === CONTAINER SETTINGS === */
 
 .custom-container {
