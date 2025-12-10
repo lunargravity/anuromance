@@ -56,7 +56,7 @@ export default function Page() {
           {<FirstRow />}
           <div className="second-row">
             <div id="samples-container" className="custom-container">
-              <p className="logline-label">samples</p>
+              <p className="label">samples</p>
               <div className="samples">
                 <SampleIcon
                   onClick={() => {
@@ -84,30 +84,6 @@ export default function Page() {
                 />
               </div>
             </div>
-            {/* <div id="genres-container" className="custom-container">
-              <p className="logline-label">fave tropes</p>
-              <div className="genre-list">
-                <ul>
-                  <li>grumpy sunshine</li>
-                  <li>love triangle</li>
-                  <li>marriage of convenience</li>
-                  <li>office romance</li>
-                  <li>soulmates</li>
-                  <li>forbidden love</li>
-                  <li>fake dating</li>
-                </ul>
-              </div>
-            </div>
-            <div id="avoided-tropes" className="custom-container">
-                <p className="logline-label">avoided tropes</p>
-                <div className="genre-list">
-                  <ul>
-                    <li>age gap</li>
-                    <li>step-siblings</li>
-                    <li>dark romance</li>
-                  </ul>
-                </div>
-            </div> */}
           </div>
           <div className="source">
             <p>
