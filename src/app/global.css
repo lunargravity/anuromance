@@ -90,6 +90,13 @@ section {
   z-index: 100;
 }
 
+@media screen and (max-width: 600px) {
+  .mockup-window {
+    flex-direction: column;
+  }
+  
+}
+
 .first-row {
   align-items: center;
   display: flex;
@@ -98,13 +105,12 @@ section {
   padding: 10px;
 }
 
-.second-row {
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  height: 200px;
-  padding: 10px;
+@media screen and (max-width: 600px) {
+  .first-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
 }
 
 .draggable-container {
