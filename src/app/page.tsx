@@ -3,9 +3,7 @@ import React, { useRef, useEffect } from "react";
 import styles from "./stars.module.css";
 import SocialMedias from "./socialmedias";
 import FirstRow from "./profile";
-import SampleIcon from "@/components/SampleIcon";
 import { dragElement, toggleDisplay } from "@/utils/domHelpers";
-import { BASE_PATH } from "@/config/constants";
 import { createStar, Star } from "@/utils/stars";
 
 export default function Page() {
