@@ -30,6 +30,12 @@ export default function FirstRow() {
           </p>
           <button
             className="contact"
+            onClick={() => window.open(`${BASE_PATH}/Altankhuyag_Samples.pdf`, "_blank")}
+          >
+            my samples
+          </button>
+          <button
+            className="contact"
             onClick={() => toggleDisplay("contact-window")}
           >
             let&apos;s connect

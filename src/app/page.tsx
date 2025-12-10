@@ -47,21 +47,6 @@ export default function Page() {
         <div className="mockup-window">
           <div className="bar">home</div>
           {<FirstRow />}
-          <div className="second-row">
-            <div id="samples-container" className="custom-container">
-              <p className="label">samples</p>
-              <div className="samples">
-                <SampleIcon
-                  onClick={() => {
-                    window.open(`${BASE_PATH}/Altankhuyag_Samples.pdf`, "_blank");
-                  }}
-                  src={`${BASE_PATH}/thirdtimesthecharm.png`}
-                  alt="Weight Icon"
-                  className="sample-icon"
-                />
-              </div>
-            </div>
-          </div>
           <div className="source">
             <p>
               Icons by{" "}
