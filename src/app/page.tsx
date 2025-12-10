@@ -52,7 +52,7 @@ export default function Page() {
         <span className={styles.shootingStar}></span>
         <span className={styles.shootingStar}></span>
         <div className="mockup-window">
-          <div className="bar">Anu Altankhuyag</div>
+          <div className="bar">home</div>
           {<FirstRow />}
           <div className="second-row">
             <div id="samples-container" className="custom-container">

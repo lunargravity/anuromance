@@ -17,16 +17,16 @@ export default function FirstRow() {
         src={`${BASE_PATH}/profile.jpg`}
         alt="Profile of Anu"
         className="profile"
-        width={100}
-        height={100}
+        width={175}
+        height={175}
       />
       <div className="custom-container">
-        <p className="logline-label">logline</p>
         <div>
           <p className="logline">
-            Ghostwriter with a BFA in Creative Writing, delivering romance
-            stories that balance fresh emotions with classic tropes, turning
-            every project into a new romance worth falling for.
+            Ghostwriter with a BFA in Creative Writing, <br/> <strong>Anu Altankhuyag </strong> 
+            delivers romance stories that <br/> 
+            balance fresh emotions with classic tropes, <br/> turning every project into a new romance <br/> 
+            <em>worth falling for.</em>
           </p>
           <button
             className="contact"
