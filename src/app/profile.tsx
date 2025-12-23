@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { dragElement, toggleDisplay } from "@/utils/domHelpers";
-import {BASE_PATH} from "@/config/constants";
+import { BASE_PATH } from "@/config/constants";
 
 export default function FirstRow() {
   useEffect(() => {
@@ -23,17 +23,54 @@ export default function FirstRow() {
       <div className="custom-container">
         <div>
           <p className="logline">
-            Ghostwriter with a BFA in Creative Writing, <br/> <strong>Anu Altankhuyag </strong> 
-            delivers romance stories that <br/> 
-            balance fresh emotions with classic tropes, <br/> turning every project into a new romance <br/> 
+            Ghostwriter with a BFA in Creative Writing, <br />{" "}
+            <strong>Anu Altankhuyag </strong>
+            delivers romance stories that <br />
+            balance fresh emotions with classic tropes, <br /> turning every
+            project into a new romance <br />
             <em>worth falling for.</em>
           </p>
-          <button
-            className="contact"
-            onClick={() => window.open(`${BASE_PATH}/Altankhuyag_Samples.pdf`, "_blank")}
-          >
-            my samples
-          </button>
+          <ul className="samples-list">
+            <li>
+              <button
+                className="sample-button"
+                onClick={() =>
+                  window.open(
+                    `https://docsend.com/view/582sf4wckwmt9v8z`,
+                    "_blank"
+                  )
+                }
+              >
+                first chapter sample
+              </button>
+            </li>
+            <li>
+              <button
+                className="sample-button"
+                onClick={() =>
+                  window.open(
+                    `https://docsend.com/view/ex4wb8hj6md4nde3`,
+                    "_blank"
+                  )
+                }
+              >
+                emotional beat sample
+              </button>
+            </li>
+            <li>
+              <button
+                className="sample-button"
+                onClick={() =>
+                  window.open(
+                    `https://docsend.com/view/n7dwza4ma23mebex`,
+                    "_blank"
+                  )
+                }
+              >
+                spicy scene sample
+              </button>
+            </li>
+          </ul>
           <button
             className="contact"
             onClick={() => toggleDisplay("contact-window")}

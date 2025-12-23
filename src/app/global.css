@@ -242,7 +242,6 @@ section {
     top: 50%;
     left: 50%;
   }
-  
 }
 
 .social-medias {
@@ -263,18 +262,31 @@ section {
 
 /* === SAMPLES SETTINGS === */
 
-.sample {
+ul.samples-list {
+  list-style-type: none;
+  padding: 0;
   margin: 10px;
-  width: fit-content !important
 }
 
-.sample-icon {
-  cursor: pointer;
-  margin: 20px;
+li {
+  background-image: url('/star.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  padding-left: 5px;
+  line-height: 1;
 }
 
-.sample-icon:hover {
-  transform: scale(1.5);
+.sample-button {
+  background-color: var(--color-primarybackground);
+  border: none;
+  color: var(--color-primarytext);
+  display: flex;
+  font-style: italic;
+  justify-self: flex-start;
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem;
+  margin: 10px;
 }
 
 /* === GENRES SETTINGS === */
