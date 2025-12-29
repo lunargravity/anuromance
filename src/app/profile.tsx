@@ -36,7 +36,7 @@ export default function FirstRow() {
                 className="sample-button"
                 onClick={() =>
                   window.open(
-                    `https://docsend.com/view/582sf4wckwmt9v8z`,
+                    `https://docsend.com/view/xa34m2usjhyjmui8`,
                     "_blank"
                   )
                 }
@@ -49,7 +49,7 @@ export default function FirstRow() {
                 className="sample-button"
                 onClick={() =>
                   window.open(
-                    `https://docsend.com/view/ex4wb8hj6md4nde3`,
+                    `https://docsend.com/view/riddbd3csy43zhvd`,
                     "_blank"
                   )
                 }
@@ -62,7 +62,7 @@ export default function FirstRow() {
                 className="sample-button"
                 onClick={() =>
                   window.open(
-                    `https://docsend.com/view/n7dwza4ma23mebex`,
+                    `https://docsend.com/view/5cs2jmutftjf3hmb`,
                     "_blank"
                   )
                 }
