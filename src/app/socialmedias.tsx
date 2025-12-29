@@ -26,6 +26,13 @@ export default function SocialMedias() {
         className="upwork"
         size={35}
       />
+      <Icon
+        href="https://substack.com/@anuromance"
+        src={`${BASE_PATH}/substack.png`}
+        alt="Substack"
+        className="substack"
+        size={35}
+      />
     </div>
   );
 }
